@@ -1,0 +1,44 @@
+.todo_form{
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.todolist_cnt{
+    display: flex;
+    flex-wrap: wrap;
+}
+.todolist_card{
+    width: 210px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.card_todo {
+    color: black!important;
+}
+
+.todo_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_login_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.form_part{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+}
+.card-body{
+    flex: none!important;
+}
+
+.main_row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
