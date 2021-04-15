@@ -54,6 +54,14 @@ const Todo = ({ firstName}) => {
     saveLocal();
   }, [todos]);
 
+  const updateListArray =(obj,index)=>{
+    let templist=todos;
+    templist[index]=obj;
+    localStorage.setItem("todos",JSON.stringify(templist));
+    setTodos(templist);
+    getLocal();
+  }
+
   return (
     <div>
       <Row className="main_row">
@@ -82,9 +90,12 @@ const Todo = ({ firstName}) => {
               <TodoList
                 todoDescription={todoDescription}
                 todoName={todoName}
+                setTodoName={setTodoName}
+                setTodoDescription={setTodoDescription}
                 setTodos={setTodos}
                 todos={todos}
                 deleteTodoHandler={deleteTodoHandler}
+                updateListArray={updateListArray}
               ></TodoList>
             </div>
           </Row>
